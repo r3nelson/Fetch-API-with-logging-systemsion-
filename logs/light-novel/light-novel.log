@@ -1,0 +1,296 @@
+2024-01-22 13:05:24,435 - logs.log - INFO
+Message:"http://localhost:4000/light-novel" fetch successful
+File: light-novel.py
+Function: fetch_data_async
+lineNumber: 17 
+
+2024-01-22 13:05:24,436 - logs.log - INFO
+Message:Fetched data: [{"title":["Mushoku Tensei: Jobless Reincarnation","Classroom of the Elite"]}]
+File: light-novel.py
+Function: main
+lineNumber: 40 
+
+2024-01-22 13:05:34,910 - logs.log - ERROR
+Message:"http://localhost:4000/light-novelsssssss" was not found
+See if URL was misinputted or if it is currently down 
+File: light-novel.py
+Function: fetch_data_async
+lineNumber: 21 
+
+2024-01-22 13:05:34,910 - logs.log - WARNING
+Message:fetch request to http://localhost:4000/light-novelsssssss returned: None
+File: light-novel.py
+Function: main
+lineNumber: 42 
+
+2024-01-22 13:05:34,910 - logs.log - ERROR
+Message:No data was returned from fetch
+File: light-novel.py
+Function: main
+lineNumber: 43 
+
+2024-01-22 13:05:48,736 - logs.log - INFO
+Message:"http://localhost:4000/empty" fetch successful
+File: light-novel.py
+Function: fetch_data_async
+lineNumber: 17 
+
+2024-01-22 13:05:48,736 - logs.log - WARNING
+Message:fetch request to http://localhost:4000/empty returned: {}
+File: light-novel.py
+Function: main
+lineNumber: 34 
+
+2024-01-22 13:05:48,736 - logs.log - ERROR
+Message:No data was returned from fetch
+File: light-novel.py
+Function: main
+lineNumber: 35 
+
+2024-01-22 17:40:57,856 - logs.log - INFO
+Message:"http://localhost:4000/light-novel" fetch successful
+File: light-novel.py
+Function: fetch_data_async
+lineNumber: 13 
+
+2024-01-22 17:40:57,856 - logs.log - INFO
+Message:Fetched data: [{"title":["Mushoku Tensei: Jobless Reincarnation","Classroom of the Elite"]}]
+File: light-novel.py
+Function: main
+lineNumber: 38 
+
+2024-01-22 17:45:17,487 - logs.log - INFO
+Message:"http://localhost:4000/light-novel" fetch successful
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 10 
+
+2024-01-22 17:45:17,487 - logs.log - INFO
+Message:Fetched data: [{"title":["Mushoku Tensei: Jobless Reincarnation","Classroom of the Elite"]}]
+File: light-novel.py
+Function: main
+lineNumber: 18 
+
+2024-01-22 18:09:47,381 - logs.log - INFO
+Message:Fetched data: [{"title":["Mushoku Tensei: Jobless Reincarnation","Classroom of the Elite"]}]
+File: light-novel.py
+Function: main
+lineNumber: 24 
+
+2024-01-22 18:10:05,524 - logs.log - INFO
+Message:Internet error
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 16 
+
+2024-01-22 18:10:05,524 - logs.log - ERROR
+Message:"http://localhost:4000/light-novelsdsfsdf" was not found
+See if URL was misinputted or if it is currently down 
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 18 
+
+2024-01-22 18:10:05,524 - logs.log - INFO
+Message:http://localhost:4000/light-novelsdsfsdf has no data
+File: light-novel.py
+Function: main
+lineNumber: 28 
+
+2024-01-22 18:10:05,525 - logs.log - ERROR
+Message:No data was returned from fetch
+File: light-novel.py
+Function: main
+lineNumber: 29 
+
+2024-01-22 18:10:11,882 - logs.log - INFO
+Message:http://localhost:4000/empty has no data
+File: light-novel.py
+Function: main
+lineNumber: 20 
+
+2024-01-22 18:10:11,882 - logs.log - ERROR
+Message:No data was returned from fetch
+File: light-novel.py
+Function: main
+lineNumber: 21 
+
+2024-01-22 18:12:19,342 - logs.log - DEBUG
+Message:"http://localhost:4000/empty" returned http 200: OK
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 11 
+
+2024-01-22 18:12:19,343 - logs.log - DEBUG
+Message:fetch request to http://localhost:4000/empty returned:
+	data: {} type: <class 'str'>
+File: light-novel.py
+Function: main
+lineNumber: 19 
+
+2024-01-22 18:12:19,343 - logs.log - INFO
+Message:http://localhost:4000/empty has no data
+File: light-novel.py
+Function: main
+lineNumber: 20 
+
+2024-01-22 18:12:19,343 - logs.log - ERROR
+Message:No data was returned from fetch
+File: light-novel.py
+Function: main
+lineNumber: 21 
+
+2024-01-22 18:13:14,997 - logs.log - DEBUG
+Message:"http://localhost:4000/empty" returned http 200: OK
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 11 
+
+2024-01-22 18:13:14,997 - logs.log - DEBUG
+Message:fetch request to http://localhost:4000/empty returned:
+	data: {}
+type: <class 'str'>
+File: light-novel.py
+Function: main
+lineNumber: 19 
+
+2024-01-22 18:13:14,997 - logs.log - INFO
+Message:http://localhost:4000/empty has no data
+File: light-novel.py
+Function: main
+lineNumber: 20 
+
+2024-01-22 18:13:14,997 - logs.log - ERROR
+Message:No data was returned from fetch
+File: light-novel.py
+Function: main
+lineNumber: 21 
+
+2024-01-22 18:13:30,614 - logs.log - DEBUG
+Message:"http://localhost:4000/empty" returned http 200: OK
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 11 
+
+2024-01-22 18:13:30,614 - logs.log - DEBUG
+Message:fetch request to http://localhost:4000/empty returned:
+	data: {}
+	type: <class 'str'>
+File: light-novel.py
+Function: main
+lineNumber: 19 
+
+2024-01-22 18:13:30,614 - logs.log - INFO
+Message:http://localhost:4000/empty has no data
+File: light-novel.py
+Function: main
+lineNumber: 20 
+
+2024-01-22 18:13:30,614 - logs.log - ERROR
+Message:No data was returned from fetch
+File: light-novel.py
+Function: main
+lineNumber: 21 
+
+2024-01-22 18:23:52,540 - logs.log - DEBUG
+Message:"http://localhost:4000/empty" returned http 200: OK
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 11 
+
+2024-01-22 18:23:52,540 - logs.log - DEBUG
+Message:fetch request to http://localhost:4000/empty returned:
+	data: {}
+	type: <class 'str'>
+File: light-novel.py
+Function: main
+lineNumber: 19 
+
+2024-01-22 18:23:52,540 - logs.log - INFO
+Message:http://localhost:4000/empty has no data
+File: light-novel.py
+Function: main
+lineNumber: 20 
+
+2024-01-22 18:23:52,540 - logs.log - ERROR
+Message:No data was returned from fetch
+File: light-novel.py
+Function: main
+lineNumber: 21 
+
+2024-01-22 18:27:48,325 - logs.log - INFO
+Message:Internet error
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 16 
+
+2024-01-22 18:27:48,325 - logs.log - DEBUG
+Message:"http://localhost:4000/light-novelssssss" returned http 404: NOT FOUND
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 17 
+
+2024-01-22 18:27:48,325 - logs.log - ERROR
+Message:"http://localhost:4000/light-novelssssss" was not found
+See if URL was misinputted or if it is currently down 
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 18 
+
+2024-01-22 18:27:48,326 - logs.log - DEBUG
+Message:fetch request to http://localhost:4000/light-novelssssss returned:
+	data: None type: <class 'NoneType'>
+File: light-novel.py
+Function: main
+lineNumber: 27 
+
+2024-01-22 18:27:48,326 - logs.log - INFO
+Message:http://localhost:4000/light-novelssssss has no data
+File: light-novel.py
+Function: main
+lineNumber: 28 
+
+2024-01-22 18:27:48,326 - logs.log - ERROR
+Message:No data was returned from fetch
+File: light-novel.py
+Function: main
+lineNumber: 29 
+
+2024-01-22 18:28:36,810 - logs.log - INFO
+Message:Internet error
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 16 
+
+2024-01-22 18:28:36,810 - logs.log - DEBUG
+Message:"http://localhost:4000/light-novelssssss" returned http 404: NOT FOUND
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 17 
+
+2024-01-22 18:28:36,810 - logs.log - ERROR
+Message:"http://localhost:4000/light-novelssssss" was not found
+See if URL was misinputted or if it is currently down 
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 18 
+
+2024-01-22 18:28:36,810 - logs.log - DEBUG
+Message:fetch request to http://localhost:4000/light-novelssssss returned:
+	data: None
+	type: <class 'NoneType'>
+File: light-novel.py
+Function: main
+lineNumber: 27 
+
+2024-01-22 18:28:36,810 - logs.log - INFO
+Message:http://localhost:4000/light-novelssssss has no data
+File: light-novel.py
+Function: main
+lineNumber: 28 
+
+2024-01-22 18:28:36,810 - logs.log - ERROR
+Message:No data was returned from fetch
+File: light-novel.py
+Function: main
+lineNumber: 29 
+

@@ -1,0 +1,157 @@
+2024-01-22 13:04:15,890 - logs.log - ERROR
+Message:"http://localhost:4000/mangadddd" was not found
+See if URL was misinputted or if it is currently down 
+File: manga.py
+Function: fetch_data_async
+lineNumber: 21 
+
+2024-01-22 13:04:15,890 - logs.log - WARNING
+Message:fetch request to http://localhost:4000/mangadddd returned: None
+File: manga.py
+Function: main
+lineNumber: 42 
+
+2024-01-22 13:04:15,890 - logs.log - ERROR
+Message:No data was returned from fetch
+File: manga.py
+Function: main
+lineNumber: 43 
+
+2024-01-22 13:04:34,299 - logs.log - INFO
+Message:"http://localhost:4000/manga" fetch successful
+File: manga.py
+Function: fetch_data_async
+lineNumber: 17 
+
+2024-01-22 13:04:34,299 - logs.log - INFO
+Message:Fetched data: [{"title":["One Piece","Chainsaw man","Tomadachi game","Tokyo Ghoul","My dress up darling","Black Clover","More than a married couple but not lovers","Gleipnir"]}]
+File: manga.py
+Function: main
+lineNumber: 40 
+
+2024-01-22 13:04:49,461 - logs.log - INFO
+Message:"http://localhost:4000/empty" fetch successful
+File: manga.py
+Function: fetch_data_async
+lineNumber: 17 
+
+2024-01-22 13:04:49,461 - logs.log - WARNING
+Message:fetch request to http://localhost:4000/empty returned: {}
+File: manga.py
+Function: main
+lineNumber: 34 
+
+2024-01-22 13:04:49,461 - logs.log - ERROR
+Message:No data was returned from fetch
+File: manga.py
+Function: main
+lineNumber: 35 
+
+2024-01-22 17:37:02,545 - logs.log - ERROR
+Message:Error during request: Cannot connect to host dfsdfds:80 ssl:default [getaddrinfo failed]
+File: manga.py
+Function: fetch_data_async
+lineNumber: 26 
+
+2024-01-22 17:37:02,545 - logs.log - WARNING
+Message:fetch request to http://dfsdfds returned: None
+File: manga.py
+Function: main
+lineNumber: 42 
+
+2024-01-22 17:37:02,546 - logs.log - ERROR
+Message:No data was returned from fetch
+File: manga.py
+Function: main
+lineNumber: 43 
+
+2024-01-22 18:29:56,556 - logs.log - DEBUG
+Message:"http://localhost:4000/manga" returned http 200: OK
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 11 
+
+2024-01-22 18:29:56,556 - logs.log - INFO
+Message:data fetched succesfully
+File: manga.py
+Function: main
+lineNumber: 24 
+
+2024-01-22 18:30:06,364 - logs.log - INFO
+Message:Internet error
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 16 
+
+2024-01-22 18:30:06,364 - logs.log - DEBUG
+Message:"http://localhost:4000/mangad" returned http 404: NOT FOUND
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 17 
+
+2024-01-22 18:30:06,364 - logs.log - ERROR
+Message:"http://localhost:4000/mangad" was not found
+See if URL was misinputted or if it is currently down 
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 18 
+
+2024-01-22 18:30:06,364 - logs.log - DEBUG
+Message:fetch request to http://localhost:4000/mangad returned:
+	data: None
+	type: <class 'NoneType'>
+File: manga.py
+Function: main
+lineNumber: 27 
+
+2024-01-22 18:30:06,364 - logs.log - INFO
+Message:http://localhost:4000/mangad has no data
+File: manga.py
+Function: main
+lineNumber: 28 
+
+2024-01-22 18:30:06,364 - logs.log - ERROR
+Message:No data was returned from fetch
+File: manga.py
+Function: main
+lineNumber: 29 
+
+2024-01-22 18:30:30,317 - logs.log - INFO
+Message:Internet error
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 16 
+
+2024-01-22 18:30:30,317 - logs.log - DEBUG
+Message:"http://localhost:4000/mangad" returned http 404: NOT FOUND
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 17 
+
+2024-01-22 18:30:30,317 - logs.log - ERROR
+Message:"http://localhost:4000/mangad" was not found
+See if URL was misinputted or if it is currently down 
+File: fetch_data_async.py
+Function: fetch_data_async
+lineNumber: 18 
+
+2024-01-22 18:30:30,317 - logs.log - DEBUG
+Message:fetch request to http://localhost:4000/mangad returned:
+	data: None
+	type: <class 'NoneType'>
+File: manga.py
+Function: main
+lineNumber: 27 
+
+2024-01-22 18:30:30,317 - logs.log - INFO
+Message:http://localhost:4000/mangad has no data
+File: manga.py
+Function: main
+lineNumber: 28 
+
+2024-01-22 18:30:30,317 - logs.log - ERROR
+Message:No data was returned from fetch
+File: manga.py
+Function: main
+lineNumber: 29 
+
