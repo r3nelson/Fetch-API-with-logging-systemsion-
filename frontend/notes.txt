@@ -1,0 +1,10 @@
+I want a frontend using FASTAPI
+
+the frontend should display logs to the user
+
+I want a checkbox of options users can click on to select Debug level (e.g. Debug, Info, Warning, Error, Critical)
+
+Once clicked I want the logs to show for the selected Data levels
+
+I also want to add a timestamp check so it only shows logs within a certain time period
+
