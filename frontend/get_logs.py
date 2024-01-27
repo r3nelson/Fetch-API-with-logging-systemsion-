@@ -1,80 +1,76 @@
-def get_logs (file_path):
-    debug_logs = []
-    info_logs = []
-    warning_logs = []
-    error_logs =[]
 
-    debug_levels = ['DEBUG','INFO','WARNING','ERROR']
-
-    with open(file_path, 'r') as f:
-        start_condition = False
-        end_condition = False
-        all_logs = f.readlines()
-        # print(type(all_logs))
-        # for i in range(len(all_logs)):
-
-        # for index, line in enumerate(all_logs):
-        #     if line == '\n':
-        #         continue
-        logs = []
-        log = ''
-        for line in all_logs:
-            
-            if line == '\n':
-                # log_type.append(log)
-                logs.append(log)
-                log = ''
-                # print('newline')
-            log+= line
-            # log.append(line.strip())
-
+def get_logs(file):
     
-    print(logs)
-    # for log in logs:
-    #     if "DEBUG" in log:
-    #         debug_logs.append(log)
-    #     if "INFO" in log:
-    #         info_logs.append(log)
-    #     if "WARNING" in log:
-    #         warning_logs.append(log)
-    #     if "ERROR" in log:
-    #         error_logs.append(log)
-
-    # print(info_logs)
-    
-    # with open ('test.txt', 'w+') as f:
-    #     f.write(str(info_logs))
-            
+    # create list of where every log starts and stops
+    with open(file, 'r') as f:
+        lines = f.readlines()
+        log_block_indexes = []
+        for i in range(len(lines)):
+            if i == 0:
+                log_block_indexes.append(i)
+                continue
+            if lines[i] == '\n':
+                log_block_indexes.append(i)
         
-# print(get_logs('../logs/manga/manga.log'))
-    
-def get_logs (file_path):
-    # debug_levels = ['DEBUG','INFO','WARNING','ERROR']
-
-    # logs= {'DEBUG': [], 'INFO': [], 'WARNING':[], 'ERROR': []}
-    # level = None
-    # with open(file_path, 'r') as f:
-    #     for line in f.readlines():
-            # if "DEBUG" in line:
-            #     level = "DEBUG"
-            # if "INFO" in line:
-            #     level = "INFO"
-            # if "WARNING" in line:
-            #     level = "WARNING"
-            # if "ERROR" in line:
-            #     level = "ERROR"
-    
-    with open(file_path, 'r') as f:
-
-        line = f.readline()
-        while line:
-            # Process the line (e.g., print it)
-            print(line.strip())
+        # find start and end indexes for each log block
+        log_blocks ={}
+        for i in range(len(log_block_indexes) - 1):
+            if i == 0:
+                log_blocks[i] = [log_block_indexes[i], log_block_indexes[i+1]]
+            else:
+                log_blocks[i] = [log_block_indexes[i] + 1 , log_block_indexes[i+1]]
+                
+       
+        # assign log to level of DEBUG, INFO, WARNING, or ERROR
+        def assign_log_level(line):
+            if "DEBUG" in line:
+                return "DEBUG"
+            if "INFO" in line:
+                return "INFO"
+            if "WARNING" in line:
+                return "WARNING"
+            if "ERROR" in line:
+                return "ERROR"
             
-            # Read the next line
-            line = f.readline()
-            
+        # add level to log blocks (e.g., logblock[key] = [start, end, level])
+        for key in log_blocks:
+            line = lines[log_blocks[key][0]]
+            level = assign_log_level(line)
+            log_blocks[key].append(level)
         
-                    
+        all_logs = {'DEBUG': {}, 'INFO': {}, 'WARNING': {}, 'ERROR': {}}
+        
+        # function to seperate logs based on level
+        def categorize_logs (start, end, level):
+            key = tuple([start,end])
+            all_logs[level].setdefault(key,[])
 
-print(get_logs('../logs/manga/manga.log'))
+            for i in range(start,end):
+                value = lines[i]  
+                try:
+                    all_logs[level][key].append(value)
+                except Exception as e:
+                    print(f"An error occurred: {e}")
+
+        # seperate logs based on level
+        for i in log_blocks:
+            start, end, level = log_blocks[i]
+            categorize_logs(start,end,level)
+
+        # use this function to seperate the individual logs for display to API
+        def get_logs_for_level(level):
+            logs = all_logs[level]
+
+            log_indexes = []
+            for key in logs:
+                start, end = key
+                for i in range(start,end):
+                    print(lines[i].strip())
+
+        get_logs_for_level('ERROR')
+
+
+    return
+            
+get_logs('../logs/manga/manga.log')
+
