@@ -8,9 +8,12 @@ def main():
      
      # create dictionary of all logs (all_logs = {"DEBUG": debug_logs, "INFO": info_logs, "WARNING": warning_logs, "ERROR": error_logs })
      all_logs = get_all_logs(log_lines)
-
+     print(all_logs)
+     print('\n')
+     
      # return logs of specific level ("DEBUG", "INFO", "WARNING", and/or "ERROR")
      level = input("Enter a log level: ").upper()
      error_logs = get_specific_logs(log_lines, all_logs, level)
+     print(error_logs)
 
 main()

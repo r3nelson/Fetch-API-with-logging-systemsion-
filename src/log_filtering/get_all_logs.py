@@ -1,4 +1,3 @@
-
 def get_all_logs(log_lines):
     
     # create list of where every log starts and stops
