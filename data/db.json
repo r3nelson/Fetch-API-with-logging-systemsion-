@@ -1,0 +1,46 @@
+{
+  "anime": [
+    {
+      "title": [
+        "One Piece",
+        "Attack on Titan",
+        "Naruto",
+        "Kaguya Sama: Love is War",
+        "FMAB",
+        "Mushoku Tensei: Jobless Reincarnation",
+        "Your Lie in April",
+        "Classroom of the Elite",
+        "Death Note",
+        "Inuyasha",
+        "Blue Lock",
+        "Black Clover",
+        "Demon Slayer",
+        "Assassination Classroom"
+      ]
+    }
+  ],
+
+  "manga": [
+    {
+      "title": [
+        "One Piece",
+        "Chainsaw man",
+        "Tomadachi game",
+        "Tokyo Ghoul",
+        "My dress up darling",
+        "Black Clover",
+        "More than a married couple but not lovers",
+        "Gleipnir"
+      ]
+    }
+  ],
+  "light-novel": [
+    {
+      "title": [
+        "Mushoku Tensei: Jobless Reincarnation",
+        "Classroom of the Elite",
+        "86"
+      ]
+    }
+  ]
+}

@@ -1,15 +1,18 @@
 from fastapi import FastAPI
-from ..log_filtering.read_logfile import read_logfile
-from ..log_filtering.get_all_logs import get_all_logs
-from ..log_filtering.get_specific_logs import get_specific_logs
+from log_filtering.read_logfile import read_logfile
+from log_filtering.get_all_logs import get_all_logs
+from log_filtering.get_specific_logs import get_specific_logs
+
+# need to find way to access data in data folder instead of moving log files into API folder directly
 
 app = FastAPI()
 
 # currently returns all logs as object
 # need to change to string for easier viewing
 @app.get("/logs/all")
-def display_all_logs():
-    log_lines = read_logfile('manga.log')
+def display_all_logs(log_file):
+    # log_lines = read_logfile(log_file)
+    log_lines = read_logfile(f"./data/{log_file}.log")
     # log_lines = read_logfile('../../logs/manga/manga.log')
     all_logs = get_all_logs(log_lines)
 
@@ -23,8 +26,8 @@ def display_all_logs():
 
 # returns debug logs as string for easier viewing 
 @app.get("/logs/debug")
-def display_debug_logs():
-    log_lines = read_logfile('manga.log')
+def display_debug_logs(log_file):
+    log_lines = read_logfile(f"./data/{log_file}.log")
     # log_lines = read_logfile('../../logs/manga/manga.log')
     all_logs = get_all_logs(log_lines)
     debug_logs = get_specific_logs(log_lines, all_logs, "DEBUG")
@@ -32,8 +35,8 @@ def display_debug_logs():
 
 # returns info logs as string for easier viewing 
 @app.get("/logs/info")
-def display_info_logs():
-    log_lines = read_logfile('manga.log')
+def display_info_logs(log_file):
+    log_lines = read_logfile(f"./data/{log_file}.log")
     # log_lines = read_logfile('../../logs/manga/manga.log')
     all_logs = get_all_logs(log_lines)
     info_logs = get_specific_logs(log_lines, all_logs, "INFO")
@@ -41,8 +44,8 @@ def display_info_logs():
 
 # returns warning logs as string for easier viewing 
 @app.get("/logs/warning")
-def display_warning_logs():
-    log_lines = read_logfile('manga.log')
+def display_warning_logs(log_file):
+    log_lines = read_logfile(f"./data/{log_file}.log")
     # log_lines = read_logfile('../../logs/manga/manga.log')
     all_logs = get_all_logs(log_lines)
     warning_logs = get_specific_logs(log_lines, all_logs, "WARNING")
@@ -50,8 +53,8 @@ def display_warning_logs():
 
 # returns error logs as string for easier viewing 
 @app.get("/logs/error")
-def display_error_logs():
-    log_lines = read_logfile('manga.log')
+def display_error_logs(log_file):
+    log_lines = read_logfile(f"./data/{log_file}.log")
     # log_lines = read_logfile('../../logs/manga/manga.log')
     all_logs = get_all_logs(log_lines)
     error_logs = get_specific_logs(log_lines, all_logs, "ERROR")
